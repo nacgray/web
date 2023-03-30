@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/* 全屏背景图 */
+body {
+    background-image: url("../img/wolfgang-hasselmann-jhZ6bxLo12U-unsplash.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.nav {
+    display: inline-block;
+    height: 88px;
+    border-bottom: 2px solid #c6c4c4eb;
+    border-top: 100px;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    font-weight: bolder;
+}
+
+/*左漂浮*/
+.fl {
+    float: left;
+}
+
+/*右漂浮*/
+.fr {
+    float: right;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav .logo {
+    position: fixed;
+    left: 30px;
+    margin-left: 20px;
+    /*margin: 0 0 0 80px;*/
+    height: 88px;
+    line-height: 88px;
+    top: 10px;
+}
+
+.nav .logo1 {
+    position: fixed;
+    right: 30px;
+    top: 10px;
+    margin-right: 11px;
+    border-left: #a5a0a0;
+    height: 88px;
+    line-height: 88px;
+}
+
+.nav .main {
+    margin-left: 300px;
+    height: 88px;
+    line-height: 88px;
+}
+
+.nav .main a {
+    margin: 0 40px;
+}
+
+.nav .user {
+    position: fixed;
+    margin: 0 15px 0 15px;
+    height: 88px;
+    line-height: 88px;
+    top: 10px;
+    right: 0px;
+}
+
+/*右边按钮*/
+.nav .user a {
+    font-size: 20px;
+    height: 88px;
+    /*border-bottom: 2px solid rgba(0, 0, 0, 0.4);*/
+    border-top: 100px;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 18px;
+    margin: 22px 0;
+}
+
+/*按钮颜色*/
+.nav .user a:nth-of-type(1) {
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    margin-right: 98px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.nav .user a:nth-of-type(2) {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #e53535;
+    font-weight: bolder;
+}
+
+
+/*弹窗*/
+.black_overlay {
+    display: none;
+    /* 此元素不会被显示*/
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #bbbbbb;
+    z-index: 1001;
+    /* z-index 属性设置元素的堆叠顺序。*/
+    opacity: .80;
+    /* opacity 属性设置元素的不透明级别。*/
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+    top: 20%;
+    border: 1px solid #bbbbbb;
+    border-radius: 20px;
+    background-color: white;
+    z-index: 1002;
+    /*层级要比.black_overlay高，这样才能显示在它前面*/
+    overflow: auto;
+}
+
+#light {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 660px;
+    height: 660px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#light1 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 256px;
+    height: 200px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#form_submit {
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#font_self {
+    font-weight: 400;
+    font-size: 24px;
+    color: #a5a0a0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button_beautiful {
+    width: 60px;
+    height: 34px;
+    /* 高度 */
+    border-width: 0px;
+    border-radius: 6px;
+    background: #4ECDC4;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/*修改默认颜色*/
+a:link {
+    color: #f9f9f9d7;
+}
+
+/*去除超链接a下划线*/
+a {
+    text-decoration: none;
+}
+
+/*鼠标漂浮变色*/
+a:hover {
+    color: white;
+}
+
+body,
+div,
+ul,
+li,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+#div1 {
+    position: fixed;
+    left: 0;
+    /*到底端*/
+    margin: 5px auto;
+    border-left-color: #9b9797;
+    width: 256px;
+    height: 1580px;
+    overflow: hidden;
+}
+
+#div1 ul {
+    position: absolute;
+    left: 20px;
+}
+
+#div1 ul li {
+    float: left;
+    padding: 10px;
+    list-style: none;
+    width: 128px;
+    height: 128px;
+}
+
+#div1 ul li img {
+    width: 128px;
+    height: 128px;
+}
+
+
+.Posi {
+    position: fixed;
+    color: aliceblue;
+    height: 100px;
+    font-weight: bolder;
+    top: 160px;
+    right: 150px;
+}
+.pet {
+    width: 50px;
+    height: 65px;
+    position: absolute;
+    background-size: cover;
+}
